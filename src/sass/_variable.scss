@@ -1,0 +1,19 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+//! mes variable couleur
+$nav : #1A1A1D ;
+$package : #334D5C ;
+$beige : #EAE3D6;
+$xfooter : #393a3b;
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+//! custom couleur nom pour moi 
+$custom-colors : (
+    "dark" : $nav ,
+    "pack" : $package ,
+    "cassé" : $beige ,
+    "bottom" : $xfooter ,
+);
+
+//! merg
+$theme-colors : map-merge($theme-colors , $custom-colors);
